@@ -5,7 +5,7 @@
         "iOS": "0.0.0"
     },
     "page": {
-        "homePage": "/pages/eros-demos/index.js",
+        "homePage": "/pages/app/index.js",
         "mediatorPage": "/pages/meditor/index.js",
         "navBarColor": "#ffffff",
         "navItemColor": "#333"

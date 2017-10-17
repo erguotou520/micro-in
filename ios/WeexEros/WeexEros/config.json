@@ -1,8 +1,8 @@
 {
-    "appName": "weex-eros-template",
+    "appName": "micro-in",
     "version": {
-        "android": "weex-eros-version",
-        "iOS": "weex-eros-version"
+        "android": "0.0.0",
+        "iOS": "0.0.0"
     },
     "page": {
         "homePage": "/pages/eros-demos/index.js",
