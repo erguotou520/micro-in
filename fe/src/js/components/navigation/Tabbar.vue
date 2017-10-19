@@ -41,9 +41,13 @@ export default {
 }
 </script>
 <style lang="stylus" scoped>
+@import "../../css/variable.styl"
 .tabbar
   position relative
   flex-direction row
   align-items center
   background-color #fff
+  border-top-style solid
+  border-top-color $color-text-disabled
+  border-top-width 2px
 </style>

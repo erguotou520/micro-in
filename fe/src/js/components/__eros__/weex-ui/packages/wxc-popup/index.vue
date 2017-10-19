@@ -93,7 +93,8 @@
         default: () => ({
           timingFunction: 'ease-in'
         })
-      }
+      },
+      popupStyle: Object
     },
     data: () => ({
       haveOverlay: true,
@@ -114,7 +115,7 @@
         return this.getTransform(this.pos, this.width, this.height, true);
       },
       padStyle () {
-        const { pos, width, height, popupColor } = this;
+        const { pos, width, height, popupColor, popupStyle } = this;
         let style = {
           width: `${width}px`,
           backgroundColor: popupColor
@@ -137,7 +138,7 @@
           ...style,
           right: `${-width}px`
         });
-        return style;
+        return { ...style, ...popupStyle };
       }
     },
     methods: {

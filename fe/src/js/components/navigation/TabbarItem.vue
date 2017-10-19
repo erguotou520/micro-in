@@ -71,7 +71,7 @@ export default {
   justify-content center
 .icon-font
   color $color-text-minor
-  font-size 32px
+  font-size 40px
 .icon-font-active
   color $color-primary
 .icon-image

@@ -1,6 +1,6 @@
 /*
- * @Author: Zero 
- * @Date: 2017-10-10 11:12:40 
+ * @Author: Zero
+ * @Date: 2017-10-10 11:12:40
  * @Last Modified by: Zero
  * @Last Modified time: 2017-10-11 12:22:01
  */
@@ -11,29 +11,37 @@
 // 住： 不能再app退出的时候来持久化存储，退出时间很短，无法保证存储成功
 
 new Vue({
-    template: '<div></div>',
-    data() {
-        return {
-            count: 0
-        }
-    },
-    watch: {
-        count(newVal, oldVal) {
-            // 每当值改变的时候都会推送给订阅 store 变化的事件
-            this.$event.emit("store.change", {
-                newVal,
-                oldVal
-            })
-        }
-    },
-    methods: {
-        bindEvent() {
-            this.$event.on("store.count.add", resData => {
-                this.count++
-            })
-        }
-    },
-    created() {
-        this.bindEvent()
+  template: '<div></div>',
+  data() {
+    return {
+      count: 0
     }
-});
+  },
+  watch: {
+    count(newVal, oldVal) {
+      // 每当值改变的时候都会推送给订阅 store 变化的事件
+      this.$event.emit("store.change", {
+        newVal,
+        oldVal
+      })
+    }
+  },
+  methods: {
+    bindEvent() {
+      this.$event.on("store.count.add", resData => {
+        this.count++
+      })
+    }
+  },
+  beforeCreate: function() {
+    var domModule = weex.requireModule('dom')
+    //目前支持ttf、woff文件，不支持svg、eot类型,moreItem at http://www.iconfont.cn/
+    domModule.addRule('fontFace', {
+      'fontFamily': "iconfont",
+      'src': "url('http://at.alicdn.com/t/font_443902_30rxirbnjfnipb9.ttf')"
+    })
+  },
+  created() {
+    this.bindEvent()
+  }
+})

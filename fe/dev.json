@@ -1,27 +1,32 @@
 {
-    "exports": [
-        "js/pages/meditor/index.js",
-        "js/pages/app/index.vue"
-    ],
-    "alias": {
-        "Eros": "js/components/__eros__",
-        "Components": "js/components",
-        "Common": "js/common",
-        "Config": "js/config",
-        "Widget": "js/widget",
-        "Pages": "js/pages",
-        "Utils": "js/utils"
-    },
-    "server": {
-        "path": "../",
-        "port": 80
-    },
-    "proxy": [{
-        "route": "/test",
-        "target": "127.0.0.1:52077/test"
-    }],
-    "mockServer": {
-        "port": 52077,
-        "mockDir": "./dist/mock"
-    }
+  "exports": [
+    "js/pages/meditor/index.js",
+    "js/pages/app/index.vue",
+    "js/pages/app/tab1/index.vue",
+    "js/pages/app/tab1/VueWeekly.vue",
+    "js/pages/app/tab1/VueWeeklyWeb.vue",
+    "js/pages/app/tab2/index.vue",
+    "js/pages/app/tab3/index.vue",
+    "js/pages/app/tab4/index.vue"
+  ],
+  "alias": {
+    "Components": "js/components",
+    "Common": "js/common",
+    "Config": "js/config",
+    "Widget": "js/widget",
+    "Pages": "js/pages",
+    "Utils": "js/utils"
+  },
+  "server": {
+    "path": "../",
+    "port": 80
+  },
+  "proxy": [{
+    "route": "/test",
+    "target": "127.0.0.1:52077/test"
+  }],
+  "mockServer": {
+    "port": 52077,
+    "mockDir": "./dist/mock"
+  }
 }
