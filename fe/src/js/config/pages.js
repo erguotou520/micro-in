@@ -6,49 +6,15 @@
 
 export default {
   'vue-weekly': {
-    url: '/pages/app/tab1/VueWeekly.js'
+    url: '/pages/app/vue-weekly/VueWeekly.js'
   },
   'vue-weekly-web': {
-    url: '/pages/app/tab1/VueWeeklyWeb.js'
+    url: '/pages/app/vue-weekly/VueWeeklyWeb.js'
+  },
+  'zhihu-daily': {
+    url: '/pages/app/zhihu/ZhihuDaily.js'
+  },
+  'zhihu-daily-web': {
+    url: '/pages/app/zhihu/ZhihuDailyWeb.js'
   }
-    // 'tab2.button': {
-    //     title: '按钮',
-    //     url: '/pages/eros-demos/tab2/button.js',
-    // },
-    // 'tab2.tip': {
-    //     title: '提示',
-    //     url: '/pages/eros-demos/tab2/tip.js',
-    // },
-    // 'tab2.header': {
-    //     title: '提示',
-    //     url: '/pages/eros-demos/tab2/header.js',
-    // },
-    // 'tab2.image': {
-    //     title: '提示',
-    //     url: '/pages/eros-demos/tab2/image.js',
-    // },
-    // 'tab2.icon': {
-    //     title: '图标',
-    //     url: '/pages/eros-demos/tab2/icon.js',
-    // },
-    // 'tab2.tabbar': {
-    //     title: '选项卡',
-    //     url: '/pages/eros-demos/tab2/tabbar.js',
-    // },
-    // 'tab3.test': {
-    //     title: '路由测试页面',
-    //     url: '/pages/eros-demos/tab3/router.js'
-    // },
-    // 'tab3.amap': {
-    //     title: '地图页面',
-    //     url: '/pages/eros-demos/tab3/amap.js'
-    // },
-    // 'tab4.slider': {
-    //     title: '手势滚动',
-    //     url: '/pages/eros-demos/tab4/demo/index.js',
-    // },
-    // 'tab4.waterfall': {
-    //     title: 'weex 官方瀑布流',
-    //     url: '/pages/eros-demos/tab4/waterfall.js',
-    // }
 }

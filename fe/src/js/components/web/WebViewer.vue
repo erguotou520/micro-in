@@ -3,6 +3,7 @@
     <status-bar></status-bar>
     <u-header><div slot="left" style="flex-direction:row"><u-icon v-if="showBack" color="#fff" @click="back">&#xe697;</u-icon><u-icon v-if="showClose" color="#fff" @click="close" style="margin-left:24px">&#xe69a;</u-icon><u-icon v-if="showReload" color="#fff" @click="reload" style="margin-left:24px">&#xe6aa;</u-icon></div>{{title}}<u-icon slot="right" color="#fff" @click="share">&#xe718;</u-icon></u-header>
     <u-progress v-if="percentage>0&&percentage<100" :percentage="percentage" background-color="transparent" bar-color="#3b8fce" bar-height="4px"></u-progress>
+    <slot></slot>
     <web ref="webview" :src="url" class="webview" @pagestart="start" @pagefinish="finish" @error="error"></web>
   </div>
 </template>

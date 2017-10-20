@@ -2,12 +2,13 @@
   "exports": [
     "js/pages/meditor/index.js",
     "js/pages/app/index.vue",
-    "js/pages/app/tab1/index.vue",
-    "js/pages/app/tab1/VueWeekly.vue",
-    "js/pages/app/tab1/VueWeeklyWeb.vue",
-    "js/pages/app/tab2/index.vue",
-    "js/pages/app/tab3/index.vue",
-    "js/pages/app/tab4/index.vue"
+    "js/pages/app/Tab1.vue",
+    "js/pages/app/Tab2.vue",
+    "js/pages/app/Tab3.vue",
+    "js/pages/app/Tab4.vue",
+    "js/pages/app/vue-weekly/VueWeekly.vue",
+    "js/pages/app/vue-weekly/VueWeeklyWeb.vue",
+    "js/pages/app/zhihu/ZhihuDaily.vue"
   ],
   "alias": {
     "Components": "js/components",

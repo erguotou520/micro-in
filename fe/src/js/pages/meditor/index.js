@@ -38,7 +38,7 @@ new Vue({
     //目前支持ttf、woff文件，不支持svg、eot类型,moreItem at http://www.iconfont.cn/
     domModule.addRule('fontFace', {
       'fontFamily': "iconfont",
-      'src': "url('http://at.alicdn.com/t/font_443902_30rxirbnjfnipb9.ttf')"
+      'src': "url('http://at.alicdn.com/t/font_443902_g3ylas9b10x561or.ttf')"
     })
   },
   created() {

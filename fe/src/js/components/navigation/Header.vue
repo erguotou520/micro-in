@@ -48,7 +48,7 @@ export default {
   flex 1
   height 100%
 .title
-  flex 4
+  flex 1
   color #fff
   font-size 34px
   font-weight 300

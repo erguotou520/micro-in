@@ -14,12 +14,16 @@ export default {
     color: {
       type: String,
       default: '#667180'
+    },
+    family: {
+      type: String,
+      default: 'iconfont'
     }
   },
   computed: {
     style () {
       return {
-        fontFamily: 'iconfont',
+        fontFamily: this.family,
         color: this.color,
         fontSize: `${this.size}px`
       }

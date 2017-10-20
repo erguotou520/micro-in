@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     weexSrc () {
-      return this.getJS(`app/tab${navs.indexOf(this.index) + 1}/index.js`)
+      return this.getJS(`app/Tab${navs.indexOf(this.index) + 1}.js`)
     }
   },
   components: {
